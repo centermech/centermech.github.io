@@ -1,125 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CenterMech - Aire Acondicionado</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CenterMech - Aire Acondicionado</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
 
-        header {
-            background-color: #0a2540;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* HEADER */
+header {
+    background-color: #0a2540;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
 
-        header img {
-            width: 180px;
-            margin-bottom: 10px;
-        }
+header img {
+    width: 140px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
 
-        nav {
-            background-color: #133b63;
-            padding: 12px;
-            text-align: center;
-        }
+/* NAV */
+nav {
+    background-color: #133b63;
+    padding: 12px;
+    text-align: center;
+}
 
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .hero {
-            background-color: #eaf1f8;
-            padding: 120px 20px;
-            text-align: center;
-        }
+/* HERO */
+.hero {
+    background-color: #eaf1f8;
+    padding: 120px 20px;
+    text-align: center;
+}
 
-        .hero h2 {
-            font-size: 40px;
-            margin-bottom: 10px;
-            color: #0a2540; /* 🔵 Azul marino */
-        }
+.hero h2 {
+    font-size: 42px;
+    color: #0a2540;
+    margin-bottom: 10px;
+}
 
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #333;
-        }
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #444;
+}
 
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-        }
+/* BOTÓN */
+.btn {
+    background-color: #25D366;
+    border: none;
+    padding: 14px 28px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.btn:hover {
+    transform: scale(1.05);
+}
 
-        .card {
-            background: white;
-            margin: 15px;
-            padding: 25px;
-            width: 260px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+.section h2 {
+    color: #0a2540;
+}
 
-        footer {
-            background-color: #0a2540;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+/* SERVICES */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        button {
-            background-color: #25D366;
-            border: none;
-            padding: 12px 25px;
-            color: white;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.card {
+    background: white;
+    margin: 15px;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
 
-        button:hover {
-            opacity: 0.9;
-        }
+.card:hover {
+    transform: translateY(-6px);
+}
 
-        /* WhatsApp flotante */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            font-size: 20px;
-            text-decoration: none;
-        }
-    </style>
+/* CONTACT */
+.contact p {
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <!-- Cambia esto si usas link externo -->
+    <!-- Puedes cambiar esto por tu logo cuando lo tengas bien -->
     <img src="logo.png" alt="CenterMech Logo">
     <h1>CenterMech</h1>
     <p>Servicios Profesionales de Aire Acondicionado</p>
@@ -135,7 +153,7 @@
     <h2>Instalación, Reparación y Mantenimiento</h2>
     <p>Tu confort es nuestra prioridad</p>
 
-    <button onclick="window.open('https://wa.me/17874757654?text=Hola%20CenterMech,%20necesito%20servicio%20de%20aire%20acondicionado','_blank')">
+    <button class="btn" onclick="window.open('https://wa.me/17874757654?text=Hola%20CenterMech,%20necesito%20un%20servicio%20de%20aire%20acondicionado','_blank')">
         Solicitar Servicio por WhatsApp
     </button>
 </section>
@@ -151,7 +169,7 @@
 
         <div class="card">
             <h3>Mantenimiento</h3>
-            <p>Limpieza profunda y mantenimiento preventivo para mayor eficiencia.</p>
+            <p>Limpieza profunda y mantenimiento preventivo para mejorar el rendimiento.</p>
         </div>
 
         <div class="card">
@@ -161,7 +179,7 @@
     </div>
 </section>
 
-<section id="contacto" class="section">
+<section id="contacto" class="section contact">
     <h2>Contáctanos</h2>
     <p>📞 Teléfono: (787) 475-7654</p>
     <p>📧 Email: centermech@gmail.com</p>
@@ -172,7 +190,7 @@
     <p>© 2026 CenterMech - Todos los derechos reservados</p>
 </footer>
 
-<!-- Botón flotante WhatsApp -->
+<!-- BOTÓN FLOTANTE -->
 <a class="whatsapp" href="https://wa.me/17874757654" target="_blank">💬</a>
 
 </body>
