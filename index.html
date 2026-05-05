@@ -38,9 +38,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-            url('https://images.unsplash.com/photo-1581579185169-4c6b6cfd3f79') no-repeat center/cover;
-            color: white;
+            background-color: #eaf1f8;
             padding: 120px 20px;
             text-align: center;
         }
@@ -48,11 +46,13 @@
         .hero h2 {
             font-size: 40px;
             margin-bottom: 10px;
+            color: #0a2540; /* 🔵 Azul marino */
         }
 
         .hero p {
             font-size: 18px;
             margin-bottom: 20px;
+            color: #333;
         }
 
         .section {
@@ -88,7 +88,7 @@
         }
 
         button {
-            background-color: #00aaff;
+            background-color: #25D366;
             border: none;
             padding: 12px 25px;
             color: white;
@@ -97,7 +97,11 @@
             cursor: pointer;
         }
 
-        /* WhatsApp Button */
+        button:hover {
+            opacity: 0.9;
+        }
+
+        /* WhatsApp flotante */
         .whatsapp {
             position: fixed;
             bottom: 20px;
@@ -115,7 +119,7 @@
 <body>
 
 <header>
-    <!-- IMPORTANTE: cambia esto si usas link externo -->
+    <!-- Cambia esto si usas link externo -->
     <img src="logo.png" alt="CenterMech Logo">
     <h1>CenterMech</h1>
     <p>Servicios Profesionales de Aire Acondicionado</p>
@@ -130,7 +134,10 @@
 <section class="hero">
     <h2>Instalación, Reparación y Mantenimiento</h2>
     <p>Tu confort es nuestra prioridad</p>
-    <button onclick="window.location.href='#contacto'">Solicitar Servicio</button>
+
+    <button onclick="window.open('https://wa.me/17874757654?text=Hola%20CenterMech,%20necesito%20servicio%20de%20aire%20acondicionado','_blank')">
+        Solicitar Servicio por WhatsApp
+    </button>
 </section>
 
 <section id="servicios" class="section">
@@ -165,7 +172,7 @@
     <p>© 2026 CenterMech - Todos los derechos reservados</p>
 </footer>
 
-<!-- BOTÓN WHATSAPP -->
+<!-- Botón flotante WhatsApp -->
 <a class="whatsapp" href="https://wa.me/17874757654" target="_blank">💬</a>
 
 </body>
