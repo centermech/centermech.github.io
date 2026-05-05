@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CenterMech - Aire Acondicionado</title>
+
     <style>
         body {
             margin: 0;
@@ -18,36 +19,44 @@
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
+        header img {
+            width: 180px;
+            margin-bottom: 10px;
         }
 
         nav {
             background-color: #133b63;
-            padding: 10px;
+            padding: 12px;
             text-align: center;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
         }
 
         .hero {
-            background: url('https://images.unsplash.com/photo-1581579185169-4c6b6cfd3f79') no-repeat center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1581579185169-4c6b6cfd3f79') no-repeat center/cover;
             color: white;
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
         }
 
         .hero h2 {
             font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         .section {
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
@@ -59,11 +68,16 @@
 
         .card {
             background: white;
-            margin: 10px;
-            padding: 20px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 25px;
+            width: 260px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         footer {
@@ -76,11 +90,24 @@
         button {
             background-color: #00aaff;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
             color: white;
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -88,7 +115,8 @@
 <body>
 
 <header>
-    <img src="ChatGPT Image May 4, 2026, 03_48_28 PM.png" alt="CenterMech Logo" style="width:150px;">
+    <!-- IMPORTANTE: cambia esto si usas link externo -->
+    <img src="logo.png" alt="CenterMech Logo">
     <h1>CenterMech</h1>
     <p>Servicios Profesionales de Aire Acondicionado</p>
 </header>
@@ -102,25 +130,26 @@
 <section class="hero">
     <h2>Instalación, Reparación y Mantenimiento</h2>
     <p>Tu confort es nuestra prioridad</p>
-    <button>Solicitar Servicio</button>
+    <button onclick="window.location.href='#contacto'">Solicitar Servicio</button>
 </section>
 
 <section id="servicios" class="section">
     <h2>Nuestros Servicios</h2>
+
     <div class="services">
         <div class="card">
             <h3>Instalación</h3>
-            <p>Instalación profesional de unidades de aire acondicionado.</p>
+            <p>Instalación profesional de unidades de aire acondicionado residencial y comercial.</p>
         </div>
 
         <div class="card">
             <h3>Mantenimiento</h3>
-            <p>Limpieza y mantenimiento preventivo para mejor rendimiento.</p>
+            <p>Limpieza profunda y mantenimiento preventivo para mayor eficiencia.</p>
         </div>
 
         <div class="card">
             <h3>Reparación</h3>
-            <p>Diagnóstico y reparación rápida de averías.</p>
+            <p>Diagnóstico y reparación rápida de cualquier falla en tu sistema.</p>
         </div>
     </div>
 </section>
@@ -129,12 +158,15 @@
     <h2>Contáctanos</h2>
     <p>📞 Teléfono: (787) 475-7654</p>
     <p>📧 Email: centermech@gmail.com</p>
-    <p>📍 Bayamon, Puerto Rico</p>
+    <p>📍 Bayamón, Puerto Rico</p>
 </section>
 
 <footer>
     <p>© 2026 CenterMech - Todos los derechos reservados</p>
 </footer>
+
+<!-- BOTÓN WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/17874757654" target="_blank">💬</a>
 
 </body>
 </html>
